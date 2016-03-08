@@ -5,6 +5,9 @@
  */
 package studentsvsteachers;
 
+import environment.ApplicationStarter;
+import java.awt.Dimension;
+
 /**
  *
  * @author Aleah
@@ -15,7 +18,7 @@ public class StudentsVsTeachers {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ApplicationStarter.run(new String [0], "Students Vs Teachers", new Dimension(1000, 800), new BattleField());
     }
     
 }
