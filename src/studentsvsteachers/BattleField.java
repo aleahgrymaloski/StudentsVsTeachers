@@ -38,7 +38,7 @@ public class BattleField extends Environment{
         
         grid = new Grid(10, 10, 52, 36, new Point(10, 10), new Color(100, 49, 178, 100));
 
-          BufferedImage temp = (BufferedImage) ResourceTools.loadImageFromResource("items/background.png");
+          BufferedImage temp = (BufferedImage) ResourceTools.loadImageFromResource("Items/background.png");
         this.setBackground(temp.getScaledInstance(1000, 700, Image.SCALE_SMOOTH));
         
         
@@ -53,7 +53,7 @@ public class BattleField extends Environment{
     private void setUpSound() {
         // set up a list of tracks in a playlist
         ArrayList<Track> tracks = new ArrayList<>();
-        tracks.add(new Track(ZOMBIES_SONG, Source.RESOURCE, "/items/menu_song.mp3"));
+        tracks.add(new Track(ZOMBIES_SONG, Source.RESOURCE, "/items/theme_songg.wav"));
 
         Playlist playlist = new Playlist(tracks);
         // pass the playlist to a sound manager
