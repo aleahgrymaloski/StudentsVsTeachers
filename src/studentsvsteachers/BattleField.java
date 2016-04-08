@@ -22,18 +22,41 @@ import java.awt.image.BufferedImage;
  */
 
 
-public class BattleField extends Environment{
+class BattleField extends Environment{
     
     private Grid grid;
+    private int score;
+    
+    
     
     public BattleField(){
         
+<<<<<<< HEAD
         grid = new Grid(17, 17, 52, 36, new Point(10, 10), new Color(254, 8, 8));
        
+=======
+        BufferedImage temp = (BufferedImage) ResourceTools.loadImageFromResource("items/background.png"); 
+        
+        grid = new Grid(25, 15, 40, 40, new Point(10, 50), Color.MAGENTA);
+>>>>>>> origin/SGP-Sprites
 
-          BufferedImage temp = (BufferedImage) ResourceTools.loadImageFromResource("items/background.png");
-        this.setBackground(temp.getScaledInstance(1000, 700, Image.SCALE_SMOOTH));
+          
+          
+        this.setBackground(temp.getScaledInstance(1000, 900, Image.SCALE_SMOOTH)); 
+        
+         
     }
+    
+     public void setScore(int score) {
+        this.score = score;
+       
+     } 
+     
+     public void addScore(int score) {
+        setScore(this.score + score);
+        if (score >= 0);
+        
+     } 
            
 
     @Override
@@ -58,6 +81,11 @@ public class BattleField extends Environment{
 
     @Override
     public void paintEnvironment(Graphics graphics) {
+        
+        if (score < 0) { 
+            graphics.drawString("Game Over", 300, 300);
+            
+        }
     }
     
 }
