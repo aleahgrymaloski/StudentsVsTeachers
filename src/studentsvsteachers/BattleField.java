@@ -22,7 +22,7 @@ import java.awt.image.BufferedImage;
  */
 
 
-class BattleField extends Environment{
+class BattleField extends Environment {
     
     private Grid grid;
     private int score;
@@ -40,9 +40,8 @@ class BattleField extends Environment{
         grid = new Grid(25, 15, 40, 40, new Point(10, 50), Color.MAGENTA);
 >>>>>>> origin/SGP-Sprites
 
-          
-          
         this.setBackground(temp.getScaledInstance(1000, 900, Image.SCALE_SMOOTH)); 
+        
         
          
     }
@@ -57,7 +56,8 @@ class BattleField extends Environment{
         if (score >= 0);
         
      } 
-           
+     
+     
 
     @Override
     public void initializeEnvironment() {
