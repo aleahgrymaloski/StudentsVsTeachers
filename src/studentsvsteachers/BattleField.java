@@ -28,7 +28,8 @@ public class BattleField extends Environment{
     
     public BattleField(){
         
-        grid = new Grid(10, 10, 52, 36, new Point(10, 10), new Color(100, 49, 178, 100));
+        grid = new Grid(17, 17, 52, 36, new Point(10, 10), new Color(254, 8, 8));
+       
 
           BufferedImage temp = (BufferedImage) ResourceTools.loadImageFromResource("items/background.png");
         this.setBackground(temp.getScaledInstance(1000, 700, Image.SCALE_SMOOTH));
