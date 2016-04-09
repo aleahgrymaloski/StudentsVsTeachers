@@ -31,14 +31,14 @@ class BattleField extends Environment {
     
     public BattleField(){
         
-<<<<<<< HEAD
+
         grid = new Grid(17, 17, 52, 36, new Point(10, 10), new Color(254, 8, 8));
        
-=======
+
         BufferedImage temp = (BufferedImage) ResourceTools.loadImageFromResource("items/background.png"); 
         
         grid = new Grid(25, 15, 40, 40, new Point(10, 50), Color.MAGENTA);
->>>>>>> origin/SGP-Sprites
+
 
         this.setBackground(temp.getScaledInstance(1000, 900, Image.SCALE_SMOOTH)); 
         
