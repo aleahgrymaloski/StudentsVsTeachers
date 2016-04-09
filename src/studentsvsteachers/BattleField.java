@@ -96,7 +96,12 @@ class BattleField extends Environment {
         if (score < 0) {
             graphics.drawString("Game Over", 300, 300);
 
-        }
+        } 
+        
+       
+            
+        
+                
     }
 
 }
