@@ -25,20 +25,7 @@ class BattleField extends Environment {
     private Grid grid;
     private int score;
 
-    Image macinnis_1;
-    Image macinnis_2;
-    Image macinnis_3;
-    Image macinnis_4;
-    Image macinnis_5;
-    Image macinnis_6;
-    Image macinnis_7;
-    Image macinnis_8;
-    Image macinnis_9;
-    Image macinnis_10;
-    Image macinnis_11;
-    Image macinnis_12;
-    Image macinnis_13;
-    Image macinnis_14;
+    
 
     public BattleField() {
 
@@ -49,13 +36,6 @@ class BattleField extends Environment {
         grid = new Grid(25, 15, 40, 40, new Point(10, 50), Color.MAGENTA);
 
         this.setBackground(temp.getScaledInstance(1000, 900, Image.SCALE_SMOOTH));
-
-        macinnis_1 = ResourceTools.loadImageFromResource("StudentsVsTeachers/macinnis_1.png");
-        macinnis_2 = ResourceTools.loadImageFromResource("StudentsVsTeachers/macinnis_2.png");
-        macinnis_3 = ResourceTools.loadImageFromResource("StudentsVsTeachers/macinnis_3.png");
-        macinnis_4 = ResourceTools.loadImageFromResource("StudentsVsTeachers/macinnis_4.png");
-        macinnis_5 = ResourceTools.loadImageFromResource("StudentsVsTeachers/macinnis_5.png");
-        
 
     }
 
