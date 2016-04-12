@@ -36,12 +36,11 @@ class BattleField extends Environment {
 
     public BattleField() {
 
-        grid = new Grid(17, 17, 52, 36, new Point(10, 10), new Color(254, 8, 8));
 
         BufferedImage temp = (BufferedImage) ResourceTools.loadImageFromResource("items/background.png");
         this.setBackground(temp.getScaledInstance(1000, 700, Image.SCALE_SMOOTH));
 
-        grid = new Grid(25, 15, 40, 40, new Point(10, 50), Color.MAGENTA);
+        grid = new Grid(9, 4, 100, 160, new Point(10, 100), Color.MAGENTA);
 
         this.setBackground(temp.getScaledInstance(1000, 900, Image.SCALE_SMOOTH));
 
@@ -92,6 +91,10 @@ class BattleField extends Environment {
 
     @Override
     public void paintEnvironment(Graphics graphics) {
+        if (grid != null) {
+            grid.paintComponent(graphics);
+        }
+        
         graphics.setColor(Color.white);
         graphics.setFont(new Font("Typewriter", Font.BOLD, 35));
         graphics.drawString("Score: " + score, 10, 30);
