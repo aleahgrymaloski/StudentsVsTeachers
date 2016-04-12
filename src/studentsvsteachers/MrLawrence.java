@@ -8,6 +8,7 @@ package studentsvsteachers;
 import environment.Direction;
 import images.ImageManager;
 import images.ResourceTools;
+import java.awt.Image;
 
 /**
  *
@@ -40,8 +41,7 @@ public class MrLawrence {
      * @return the x
      */
        
-    private int x;
-    private int y;
+    
     private Image image;
     private Image lawrence_1, lawrence_2, lawrence_3, lawrence_4;
 
