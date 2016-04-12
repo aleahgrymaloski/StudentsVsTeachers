@@ -41,7 +41,6 @@ class BattleField extends Environment {
     }
     
      SoundManager soundmanager;
-//    public static final String SOUND_BACKGROUND = "SOUND_BACKGROUND";
    
     
     
