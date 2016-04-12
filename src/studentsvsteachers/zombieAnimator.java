@@ -24,4 +24,7 @@ public class zombieAnimator {
     public static final String MACINNIS_ZOMBIE_02 = "MACINNIS_ZOMBIE_02";
     public static final String MACINNIS_ZOMBIE_03 = "MACINNIS_ZOMBIE_03";
     public static final String MACINNIS_ZOMBIE_04 = "MACINNIS_ZOMBIE_04";
+    
+    
+    
 }
