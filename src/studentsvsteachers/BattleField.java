@@ -5,6 +5,7 @@
  */
 package studentsvsteachers;
 
+import audio.SoundManager;
 import environment.Environment;
 import grid.Grid;
 import images.ResourceTools;
@@ -38,7 +39,12 @@ class BattleField extends Environment {
         this.setBackground(temp.getScaledInstance(1000, 900, Image.SCALE_SMOOTH));
 
     }
-
+    
+     SoundManager soundmanager;
+//    public static final String SOUND_BACKGROUND = "SOUND_BACKGROUND";
+   
+    
+    
     public void setScore(int score) {
         this.score = score;
 
