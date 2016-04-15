@@ -16,7 +16,7 @@ import java.util.ArrayList;
  *
  * @author Aleah
  */
-public class ZombieImageManager  extends ImageManager {
+public class ZombieImageManager extends ImageManager {
     
     public static final String MACINNIS_ZOMBIE_01 = "MACINNIS_ZOMBIE_01";
     public static final String MACINNIS_ZOMBIE_02 = "MACINNIS_ZOMBIE_02";
@@ -84,6 +84,25 @@ public class ZombieImageManager  extends ImageManager {
 
             
     public static ArrayList<String> PATEL_ZOMBIE_WALK;
+    
+    public static final String ALEAH_PLANT_01 = "ALEAH_PLANT_01";
+    public static final String ALEAH_PLANT_02 = "ALEAH_PLANT_02";
+    public static final String ALEAH_PLANT_03 = "ALEAH_PLANT_03";
+    public static final String ALEAH_PLANT_04 = "ALEAH_PLANT_04";
+    public static final String ALEAH_PLANT_05 = "ALEAH_PLANT_05";
+    public static final String ALEAH_PLANT_06 = "ALEAH_PLANT_06";
+    
+    public static ArrayList<String> ALEAH_PLANT;
+
+    public static final String SOF_PLANT_01 = "SOF_PLANT_01";
+    public static final String SOF_PLANT_02 = "SOF_PLANT_02";
+    public static final String SOF_PLANT_03 = "SOF_PLANT_03";
+    public static final String SOF_PLANT_04 = "SOF_PLANT_04";
+    public static final String SOF_PLANT_05 = "SOF_PLANT_05";
+    public static final String SOF_PLANT_06 = "SOF_PLANT_06";
+    
+    public static ArrayList<String> SOF_PLANT;
+
 
 
     
@@ -114,15 +133,52 @@ public class ZombieImageManager  extends ImageManager {
         addImage(LAWRENCE_ZOMBIE_08, ResourceTools.loadImageFromResource("items/lawrence_8.png"));
         addImage(LAWRENCE_ZOMBIE_09, ResourceTools.loadImageFromResource("items/lawrence_9.png"));
         addImage(LAWRENCE_ZOMBIE_10, ResourceTools.loadImageFromResource("items/lawrence_10.png"));
-                addImage(LAWRENCE_ZOMBIE_10, ResourceTools.loadImageFromResource("items/lawrence_10.png"));
-        addImage(LAWRENCE_ZOMBIE_10, ResourceTools.loadImageFromResource("items/lawrence_10.png"));
-        addImage(LAWRENCE_ZOMBIE_10, ResourceTools.loadImageFromResource("items/lawrence_10.png"));
-        addImage(LAWRENCE_ZOMBIE_10, ResourceTools.loadImageFromResource("items/lawrence_10.png"));
+        addImage(LAWRENCE_ZOMBIE_11, ResourceTools.loadImageFromResource("items/lawrence_11.png"));
+        addImage(LAWRENCE_ZOMBIE_12, ResourceTools.loadImageFromResource("items/lawrence_12.png"));
+        addImage(LAWRENCE_ZOMBIE_13, ResourceTools.loadImageFromResource("items/lawrence_13.png"));
+        addImage(LAWRENCE_ZOMBIE_14, ResourceTools.loadImageFromResource("items/lawrence_14.png"));
+        addImage(LAWRENCE_ZOMBIE_15, ResourceTools.loadImageFromResource("items/lawrence_15.png"));
+        addImage(LAWRENCE_ZOMBIE_16, ResourceTools.loadImageFromResource("items/lawrence_16.png"));
+        addImage(LAWRENCE_ZOMBIE_17, ResourceTools.loadImageFromResource("items/lawrence_17.png"));
+        addImage(LAWRENCE_ZOMBIE_18, ResourceTools.loadImageFromResource("items/lawrence_18.png"));
+        addImage(LAWRENCE_ZOMBIE_19, ResourceTools.loadImageFromResource("items/lawrence_19.png"));
+        addImage(LAWRENCE_ZOMBIE_20, ResourceTools.loadImageFromResource("items/lawrence_20.png"));
+        addImage(LAWRENCE_ZOMBIE_21, ResourceTools.loadImageFromResource("items/lawrence_21.png"));
+        addImage(LAWRENCE_ZOMBIE_22, ResourceTools.loadImageFromResource("items/lawrence_22.png"));
+        addImage(LAWRENCE_ZOMBIE_23, ResourceTools.loadImageFromResource("items/lawrence_23.png"));
+        addImage(LAWRENCE_ZOMBIE_24, ResourceTools.loadImageFromResource("items/lawrence_24.png"));
+        addImage(LAWRENCE_ZOMBIE_25, ResourceTools.loadImageFromResource("items/lawrence_25.png"));
+        addImage(LAWRENCE_ZOMBIE_26, ResourceTools.loadImageFromResource("items/lawrence_26.png"));
+        addImage(LAWRENCE_ZOMBIE_27, ResourceTools.loadImageFromResource("items/lawrence_27.png"));
+        addImage(LAWRENCE_ZOMBIE_28, ResourceTools.loadImageFromResource("items/lawrence_28.png"));
+        addImage(LAWRENCE_ZOMBIE_29, ResourceTools.loadImageFromResource("items/lawrence_29.png"));
+        addImage(LAWRENCE_ZOMBIE_30, ResourceTools.loadImageFromResource("items/lawrence_30.png"));
 
 
-        
+        addImage(PATEL_ZOMBIE_01, ResourceTools.loadImageFromResource("items/patel_1.png"));
+        addImage(PATEL_ZOMBIE_02, ResourceTools.loadImageFromResource("items/patel_2.png"));
+        addImage(PATEL_ZOMBIE_03, ResourceTools.loadImageFromResource("items/patel_3.png"));
+        addImage(PATEL_ZOMBIE_04, ResourceTools.loadImageFromResource("items/patel_4.png"));
+        addImage(PATEL_ZOMBIE_05, ResourceTools.loadImageFromResource("items/patel_5.png"));
+        addImage(PATEL_ZOMBIE_06, ResourceTools.loadImageFromResource("items/patel_6.png"));
+        addImage(PATEL_ZOMBIE_07, ResourceTools.loadImageFromResource("items/patel_7.png"));
+        addImage(PATEL_ZOMBIE_08, ResourceTools.loadImageFromResource("items/patel_8.png"));
+        addImage(PATEL_ZOMBIE_09, ResourceTools.loadImageFromResource("items/patel_9.png"));
 
 
+        addImage(ALEAH_PLANT_01, ResourceTools.loadImageFromResource("items/aleah_1.png"));
+        addImage(ALEAH_PLANT_02, ResourceTools.loadImageFromResource("items/aleah_2.png"));
+        addImage(ALEAH_PLANT_03, ResourceTools.loadImageFromResource("items/aleah_3.png"));
+        addImage(ALEAH_PLANT_04, ResourceTools.loadImageFromResource("items/aleah_4.png"));
+        addImage(ALEAH_PLANT_05, ResourceTools.loadImageFromResource("items/aleah_5.png"));
+        addImage(ALEAH_PLANT_06, ResourceTools.loadImageFromResource("items/aleah_6.png"));
+
+//        addImage(SOF_PLANT_01, ResourceTools.loadImageFromResource("items/sof_1.png"));
+//        addImage(SOF_PLANT_02, ResourceTools.loadImageFromResource("items/sof_2.png"));
+//        addImage(SOF_PLANT_03, ResourceTools.loadImageFromResource("items/sof_3.png"));
+//        addImage(SOF_PLANT_04, ResourceTools.loadImageFromResource("items/sof_4.png"));
+//        addImage(SOF_PLANT_05, ResourceTools.loadImageFromResource("items/sof_5.png"));
+//        addImage(SOF_PLANT_06, ResourceTools.loadImageFromResource("items/sof_6.png"));
         
       
 
@@ -190,9 +246,21 @@ public class ZombieImageManager  extends ImageManager {
         PATEL_ZOMBIE_WALK.add(PATEL_ZOMBIE_08);
         PATEL_ZOMBIE_WALK.add(PATEL_ZOMBIE_09);
 
-
-            
-
+        ALEAH_PLANT = new ArrayList<>();
+        ALEAH_PLANT.add(ALEAH_PLANT_01);
+        ALEAH_PLANT.add(ALEAH_PLANT_02);
+        ALEAH_PLANT.add(ALEAH_PLANT_03);
+        ALEAH_PLANT.add(ALEAH_PLANT_04);
+        ALEAH_PLANT.add(ALEAH_PLANT_05);
+        ALEAH_PLANT.add(ALEAH_PLANT_06);
+        
+        SOF_PLANT = new ArrayList<>();
+        SOF_PLANT.add(SOF_PLANT_01);
+        SOF_PLANT.add(SOF_PLANT_02);
+        SOF_PLANT.add(SOF_PLANT_03);
+        SOF_PLANT.add(SOF_PLANT_04);
+        SOF_PLANT.add(SOF_PLANT_05);
+        SOF_PLANT.add(SOF_PLANT_06);
 
     }
 
