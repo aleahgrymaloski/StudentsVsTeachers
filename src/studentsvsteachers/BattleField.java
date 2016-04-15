@@ -11,6 +11,7 @@ import audio.Source;
 import audio.Track;
 import environment.Environment;
 import grid.Grid;
+import images.Animator;
 import images.ResourceTools;
 import java.awt.Color;
 import java.awt.Font;
@@ -26,7 +27,7 @@ import java.util.ArrayList;
  *
  * @author Aleah
  */
-class BattleField extends Environment {
+class BattleField extends Environment implements CellDataProviderIntf  {
 
     private Grid grid;
     private String trackNameGameTimer;
@@ -34,6 +35,9 @@ class BattleField extends Environment {
 
     private audio.SoundManager soundManager;
     public static final String ZOMBIES_SONG = "zombie";
+    
+    private GridCharacter sofMonster;
+    private GridCharacter aleahMonster;
     
     private ZombieImageManager zim;
     
@@ -43,7 +47,7 @@ class BattleField extends Environment {
         BufferedImage temp = (BufferedImage) ResourceTools.loadImageFromResource("items/background.png");
         this.setBackground(temp.getScaledInstance(1000, 700, Image.SCALE_SMOOTH));
 
-        grid = new Grid(9, 4, 100, 160, new Point(10, 100), Color.MAGENTA);
+        grid = new Grid(9, 4, 100, 160, new Point(10, 100), new Color(2, 20, 30, 1));
 
         this.setBackground(temp.getScaledInstance(1000, 900, Image.SCALE_SMOOTH));
 
@@ -51,6 +55,10 @@ class BattleField extends Environment {
         soundManager.play(ZOMBIES_SONG, -1);
         
         zim = new ZombieImageManager();
+        
+        sofMonster = new GridCharacter(1, 1, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200));
+        aleahMonster = new GridCharacter(1, 2, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200));
+
     }
 
     private void setUpSound() {
@@ -106,7 +114,40 @@ class BattleField extends Environment {
 
         if (score < 0) {
             graphics.drawString("Game Over", 300, 300);
-        } 
+        }
+        
+        if (sofMonster != null){
+            sofMonster.draw(graphics);
+        }
+        if (aleahMonster != null){
+            aleahMonster.draw(graphics);
+        }
     }
+
+//<editor-fold defaultstate="collapsed" desc="CellDataProviderIntf ">
+    @Override
+    public int getCellWidth() {
+        return grid.getCellWidth();
+        
+    }
+    
+    @Override
+    public int getCellHeight() {
+        return grid.getCellHeight();
+
+    }
+    
+    @Override
+    public int getSystemCoordX(int column, int row) {
+        return grid.getCellSystemCoordinate(column, row).x;
+
+    }
+    
+    @Override
+    public int getSystemCoordY(int column, int row) {
+        return grid.getCellSystemCoordinate(column, row).y; 
+
+    }
+//</editor-fold>
 
 }
