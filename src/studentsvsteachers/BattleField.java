@@ -32,10 +32,11 @@ class BattleField extends Environment {
     private String trackNameGameTimer;
     private int score;
 
-   private SoundManager soundManager;
-
-   public static final String ZOMBIES_SONG = "zombie";
-
+    private audio.SoundManager soundManager;
+    public static final String ZOMBIES_SONG = "zombie";
+    
+    private ZombieImageManager zim;
+    
     public BattleField() {
 
 
@@ -48,6 +49,8 @@ class BattleField extends Environment {
 
         setUpSound();
         soundManager.play(ZOMBIES_SONG, -1);
+        
+        zim = new ZombieImageManager();
     }
 
     private void setUpSound() {
