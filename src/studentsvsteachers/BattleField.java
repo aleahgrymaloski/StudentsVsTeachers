@@ -22,6 +22,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
+import map.Item;
 
 /**
  *
@@ -32,6 +33,7 @@ class BattleField extends Environment implements CellDataProviderIntf  {
     private Grid grid;
     private String trackNameGameTimer;
     private int score;
+  
 
     private audio.SoundManager soundManager;
     public static final String ZOMBIES_SONG = "zombie";
@@ -60,7 +62,7 @@ class BattleField extends Environment implements CellDataProviderIntf  {
         aleahMonster = new GridCharacter(1, 2, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200));
 
     }
-
+   
     private void setUpSound() {
         // set up a list of tracks in a playlist
         ArrayList<Track> tracks = new ArrayList<>();
