@@ -37,6 +37,28 @@ public class ZombieImageManager extends ImageManager {
 
     public static ArrayList<String> MACINNIS_ZOMBIE_WALK;
 
+    public static final String REYNOLDS_ZOMBIE_01 = "REYNOLDS_ZOMBIE_01";
+    public static final String REYNOLDS_ZOMBIE_02 = "REYNOLDS_ZOMBIE_02";
+    public static final String REYNOLDS_ZOMBIE_03 = "REYNOLDS_ZOMBIE_03";
+    public static final String REYNOLDS_ZOMBIE_04 = "REYNOLDS_ZOMBIE_04";
+    public static final String REYNOLDS_ZOMBIE_05 = "REYNOLDS_ZOMBIE_05";
+    public static final String REYNOLDS_ZOMBIE_06 = "REYNOLDS_ZOMBIE_06";
+    public static final String REYNOLDS_ZOMBIE_07 = "REYNOLDS_ZOMBIE_07";
+    public static final String REYNOLDS_ZOMBIE_08 = "REYNOLDS_ZOMBIE_08";
+    public static final String REYNOLDS_ZOMBIE_09 = "REYNOLDS_ZOMBIE_09";
+    public static final String REYNOLDS_ZOMBIE_10 = "REYNOLDS_ZOMBIE_10";
+    public static final String REYNOLDS_ZOMBIE_11 = "REYNOLDS_ZOMBIE_11";
+    public static final String REYNOLDS_ZOMBIE_12 = "REYNOLDS_ZOMBIE_12";
+    public static final String REYNOLDS_ZOMBIE_13 = "REYNOLDS_ZOMBIE_13";
+    public static final String REYNOLDS_ZOMBIE_14 = "REYNOLDS_ZOMBIE_14";
+    public static final String REYNOLDS_ZOMBIE_15 = "REYNOLDS_ZOMBIE_15";
+    public static final String REYNOLDS_ZOMBIE_16 = "REYNOLDS_ZOMBIE_16";
+    public static final String REYNOLDS_ZOMBIE_17 = "REYNOLDS_ZOMBIE_17";
+    public static final String REYNOLDS_ZOMBIE_18 = "REYNOLDS_ZOMBIE_18";
+    
+    public static ArrayList<String> REYNOLDS_ZOMBIE_WALK;
+
+
     
     public static final String LAWRENCE_ZOMBIE_01 = "LAWRENCE_ZOMBIE_01";
     public static final String LAWRENCE_ZOMBIE_02 = "LAWRENCE_ZOMBIE_02";
@@ -153,6 +175,27 @@ public class ZombieImageManager extends ImageManager {
         addImage(MACINNIS_ZOMBIE_13, ResourceTools.loadImageFromResource("items/macinnis_13.png"));
         addImage(MACINNIS_ZOMBIE_14, ResourceTools.loadImageFromResource("items/macinnis_14.png"));
         
+        addImage(REYNOLDS_ZOMBIE_01, ResourceTools.loadImageFromResource("items/reynolds_1.png"));
+        addImage(REYNOLDS_ZOMBIE_02, ResourceTools.loadImageFromResource("items/reynolds_2.png"));
+        addImage(REYNOLDS_ZOMBIE_03, ResourceTools.loadImageFromResource("items/reynolds_3.png"));
+        addImage(REYNOLDS_ZOMBIE_04, ResourceTools.loadImageFromResource("items/reynolds_4.png"));
+        addImage(REYNOLDS_ZOMBIE_05, ResourceTools.loadImageFromResource("items/reynolds_5.png"));
+        addImage(REYNOLDS_ZOMBIE_06, ResourceTools.loadImageFromResource("items/reynolds_6.png"));
+        addImage(REYNOLDS_ZOMBIE_07, ResourceTools.loadImageFromResource("items/reynolds_7.png"));
+        addImage(REYNOLDS_ZOMBIE_08, ResourceTools.loadImageFromResource("items/reynolds_8.png"));
+        addImage(REYNOLDS_ZOMBIE_09, ResourceTools.loadImageFromResource("items/reynolds_9.png"));
+        addImage(REYNOLDS_ZOMBIE_10, ResourceTools.loadImageFromResource("items/reynolds_10.png"));
+        addImage(REYNOLDS_ZOMBIE_11, ResourceTools.loadImageFromResource("items/reynolds_11.png"));
+        addImage(REYNOLDS_ZOMBIE_12, ResourceTools.loadImageFromResource("items/reynolds_12.png"));
+        addImage(REYNOLDS_ZOMBIE_13, ResourceTools.loadImageFromResource("items/reynolds_13.png"));
+        addImage(REYNOLDS_ZOMBIE_14, ResourceTools.loadImageFromResource("items/reynolds_14.png"));
+        addImage(REYNOLDS_ZOMBIE_15, ResourceTools.loadImageFromResource("items/reynolds_15.png"));
+        addImage(REYNOLDS_ZOMBIE_16, ResourceTools.loadImageFromResource("items/reynolds_16.png"));
+        addImage(REYNOLDS_ZOMBIE_17, ResourceTools.loadImageFromResource("items/reynolds_17.png"));
+        addImage(REYNOLDS_ZOMBIE_18, ResourceTools.loadImageFromResource("items/reynolds_18.png"));
+
+
+        
         
         addImage(LAWRENCE_ZOMBIE_01, ResourceTools.loadImageFromResource("items/lawrence_1.png"));
         addImage(LAWRENCE_ZOMBIE_02, ResourceTools.loadImageFromResource("items/lawrence_2.png"));
@@ -227,6 +270,28 @@ public class ZombieImageManager extends ImageManager {
         MACINNIS_ZOMBIE_WALK.add(MACINNIS_ZOMBIE_12);
         MACINNIS_ZOMBIE_WALK.add(MACINNIS_ZOMBIE_13);
         MACINNIS_ZOMBIE_WALK.add(MACINNIS_ZOMBIE_14);
+
+        REYNOLDS_ZOMBIE_WALK = new ArrayList<>();
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_01);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_02);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_03);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_04);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_05);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_06);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_07);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_08);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_09);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_10);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_11);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_12);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_13);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_14);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_15);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_16);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_17);
+        REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_18);
+
+
 
 
         LAWRENCE_ZOMBIE_WALK = new ArrayList<>();
