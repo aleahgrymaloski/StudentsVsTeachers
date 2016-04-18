@@ -103,6 +103,37 @@ public class ZombieImageManager extends ImageManager {
     
     public static ArrayList<String> SOF_PLANT;
 
+    public static final String CAFF_LADY_01 = "CAFF_LADY_01";
+    public static final String CAFF_LADY_02 = "CAFF_LADY_02";
+    public static final String CAFF_LADY_03 = "CAFF_LADY_03";
+    public static final String CAFF_LADY_04 = "CAFF_LADY_04";
+    public static final String CAFF_LADY_05 = "CAFF_LADY_05";
+    public static final String CAFF_LADY_06 = "CAFF_LADY_06";
+    public static final String CAFF_LADY_07 = "CAFF_LADY_07";
+    public static final String CAFF_LADY_08 = "CAFF_LADY_08";
+    public static final String CAFF_LADY_09 = "CAFF_LADY_09";
+    public static final String CAFF_LADY_10 = "CAFF_LADY_10";
+    public static final String CAFF_LADY_11 = "CAFF_LADY_11";
+    public static final String CAFF_LADY_12 = "CAFF_LADY_12";
+    public static final String CAFF_LADY_13 = "CAFF_LADY_13";
+    public static final String CAFF_LADY_14 = "CAFF_LADY_14";
+    public static final String CAFF_LADY_15 = "CAFF_LADY_15";
+    public static final String CAFF_LADY_16 = "CAFF_LADY_16";
+    public static final String CAFF_LADY_17 = "CAFF_LADY_17";
+    public static final String CAFF_LADY_18 = "CAFF_LADY_18";
+    public static final String CAFF_LADY_19 = "CAFF_LADY_19";
+    public static final String CAFF_LADY_20 = "CAFF_LADY_20";
+    public static final String CAFF_LADY_21 = "CAFF_LADY_21";
+    public static final String CAFF_LADY_22 = "CAFF_LADY_22";
+    public static final String CAFF_LADY_23 = "CAFF_LADY_23";
+    public static final String CAFF_LADY_24 = "CAFF_LADY_24";
+    public static final String CAFF_LADY_25 = "CAFF_LADY_25";
+    public static final String CAFF_LADY_26 = "CAFF_LADY_26";
+    public static final String CAFF_LADY_27 = "CAFF_LADY_27";
+
+
+
+
 
 
     
