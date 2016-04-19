@@ -5,19 +5,17 @@
  */
 package studentsvsteachers;
 
-
-import images.ImageManager;  
+import images.ImageManager;
 import images.ResourceTools;
 import java.awt.Image;
 import java.util.ArrayList;
-
 
 /**
  *
  * @author Aleah
  */
 public class ZombieImageManager extends ImageManager {
-    
+
     public static final String MACINNIS_ZOMBIE_01 = "MACINNIS_ZOMBIE_01";
     public static final String MACINNIS_ZOMBIE_02 = "MACINNIS_ZOMBIE_02";
     public static final String MACINNIS_ZOMBIE_03 = "MACINNIS_ZOMBIE_03";
@@ -34,10 +32,8 @@ public class ZombieImageManager extends ImageManager {
     public static final String MACINNIS_ZOMBIE_14 = "MACINNIS_ZOMBIE_14";
 
     //carry on!!!!
-
     public static ArrayList<String> MACINNIS_ZOMBIE_WALK;
 
-    
     public static final String LAWRENCE_ZOMBIE_01 = "LAWRENCE_ZOMBIE_01";
     public static final String LAWRENCE_ZOMBIE_02 = "LAWRENCE_ZOMBIE_02";
     public static final String LAWRENCE_ZOMBIE_03 = "LAWRENCE_ZOMBIE_03";
@@ -69,9 +65,8 @@ public class ZombieImageManager extends ImageManager {
     public static final String LAWRENCE_ZOMBIE_29 = "LAWRENCE_ZOMBIE_29";
     public static final String LAWRENCE_ZOMBIE_30 = "LAWRENCE_ZOMBIE_30";
 
-    
     public static ArrayList<String> LAWRENCE_ZOMBIE_WALK;
-    
+
     public static final String PATEL_ZOMBIE_01 = "PATEL_ZOMBIE_01";
     public static final String PATEL_ZOMBIE_02 = "PATEL_ZOMBIE_02";
     public static final String PATEL_ZOMBIE_03 = "PATEL_ZOMBIE_03";
@@ -82,16 +77,15 @@ public class ZombieImageManager extends ImageManager {
     public static final String PATEL_ZOMBIE_08 = "PATEL_ZOMBIE_08";
     public static final String PATEL_ZOMBIE_09 = "PATEL_ZOMBIE_09";
 
-            
     public static ArrayList<String> PATEL_ZOMBIE_WALK;
-    
+
     public static final String ALEAH_PLANT_01 = "ALEAH_PLANT_01";
     public static final String ALEAH_PLANT_02 = "ALEAH_PLANT_02";
     public static final String ALEAH_PLANT_03 = "ALEAH_PLANT_03";
     public static final String ALEAH_PLANT_04 = "ALEAH_PLANT_04";
     public static final String ALEAH_PLANT_05 = "ALEAH_PLANT_05";
     public static final String ALEAH_PLANT_06 = "ALEAH_PLANT_06";
-    
+
     public static ArrayList<String> ALEAH_PLANT;
 
     public static final String SOF_PLANT_01 = "SOF_PLANT_01";
@@ -100,7 +94,7 @@ public class ZombieImageManager extends ImageManager {
     public static final String SOF_PLANT_04 = "SOF_PLANT_04";
     public static final String SOF_PLANT_05 = "SOF_PLANT_05";
     public static final String SOF_PLANT_06 = "SOF_PLANT_06";
-    
+
     public static ArrayList<String> SOF_PLANT;
 
     public static final String CAFF_LADY_01 = "CAFF_LADY_01";
@@ -131,12 +125,8 @@ public class ZombieImageManager extends ImageManager {
     public static final String CAFF_LADY_26 = "CAFF_LADY_26";
     public static final String CAFF_LADY_27 = "CAFF_LADY_27";
 
+    public static ArrayList<String> CAFF_LADY;
 
-
-
-
-
-    
     {
         addImage(MACINNIS_ZOMBIE_01, ResourceTools.loadImageFromResource("items/macinnis_1.png"));
         addImage(MACINNIS_ZOMBIE_02, ResourceTools.loadImageFromResource("items/macinnis_2.png"));
@@ -152,8 +142,7 @@ public class ZombieImageManager extends ImageManager {
         addImage(MACINNIS_ZOMBIE_12, ResourceTools.loadImageFromResource("items/macinnis_12.png"));
         addImage(MACINNIS_ZOMBIE_13, ResourceTools.loadImageFromResource("items/macinnis_13.png"));
         addImage(MACINNIS_ZOMBIE_14, ResourceTools.loadImageFromResource("items/macinnis_14.png"));
-        
-        
+
         addImage(LAWRENCE_ZOMBIE_01, ResourceTools.loadImageFromResource("items/lawrence_1.png"));
         addImage(LAWRENCE_ZOMBIE_02, ResourceTools.loadImageFromResource("items/lawrence_2.png"));
         addImage(LAWRENCE_ZOMBIE_03, ResourceTools.loadImageFromResource("items/lawrence_3.png"));
@@ -185,7 +174,6 @@ public class ZombieImageManager extends ImageManager {
         addImage(LAWRENCE_ZOMBIE_29, ResourceTools.loadImageFromResource("items/lawrence_29.png"));
         addImage(LAWRENCE_ZOMBIE_30, ResourceTools.loadImageFromResource("items/lawrence_30.png"));
 
-
         addImage(PATEL_ZOMBIE_01, ResourceTools.loadImageFromResource("items/patel_1.png"));
         addImage(PATEL_ZOMBIE_02, ResourceTools.loadImageFromResource("items/patel_2.png"));
         addImage(PATEL_ZOMBIE_03, ResourceTools.loadImageFromResource("items/patel_3.png"));
@@ -195,7 +183,6 @@ public class ZombieImageManager extends ImageManager {
         addImage(PATEL_ZOMBIE_07, ResourceTools.loadImageFromResource("items/patel_7.png"));
         addImage(PATEL_ZOMBIE_08, ResourceTools.loadImageFromResource("items/patel_8.png"));
         addImage(PATEL_ZOMBIE_09, ResourceTools.loadImageFromResource("items/patel_9.png"));
-
 
         addImage(ALEAH_PLANT_01, ResourceTools.loadImageFromResource("items/aleah_1.png"));
         addImage(ALEAH_PLANT_02, ResourceTools.loadImageFromResource("items/aleah_2.png"));
@@ -210,8 +197,27 @@ public class ZombieImageManager extends ImageManager {
         addImage(SOF_PLANT_04, ResourceTools.loadImageFromResource("items/sof_4.png"));
         addImage(SOF_PLANT_05, ResourceTools.loadImageFromResource("items/sof_5.png"));
         addImage(SOF_PLANT_06, ResourceTools.loadImageFromResource("items/sof_6.png"));
+
+        addImage(CAFF_LADY_01, ResourceTools.loadImageFromResource("items/caflady_1.png"));
+        addImage(CAFF_LADY_02, ResourceTools.loadImageFromResource("items/caflady_2.png"));
+        addImage(CAFF_LADY_03, ResourceTools.loadImageFromResource("items/caflady_3.png"));
+        addImage(CAFF_LADY_04, ResourceTools.loadImageFromResource("items/caflady_4.png"));
+        addImage(CAFF_LADY_05, ResourceTools.loadImageFromResource("items/caflady_5.png"));
+        addImage(CAFF_LADY_06, ResourceTools.loadImageFromResource("items/caflady_6.png"));
+        addImage(CAFF_LADY_07, ResourceTools.loadImageFromResource("items/caflady_7.png"));
+        addImage(CAFF_LADY_08, ResourceTools.loadImageFromResource("items/caflady_8.png"));
+        addImage(CAFF_LADY_09, ResourceTools.loadImageFromResource("items/caflady_9.png"));
+        addImage(CAFF_LADY_10, ResourceTools.loadImageFromResource("items/caflady_10.png"));
+        addImage(CAFF_LADY_11, ResourceTools.loadImageFromResource("items/caflady_11.png"));
+        addImage(CAFF_LADY_12, ResourceTools.loadImageFromResource("items/caflady_12.png"));
+        addImage(CAFF_LADY_13, ResourceTools.loadImageFromResource("items/caflady_13.png"));
+        addImage(CAFF_LADY_14, ResourceTools.loadImageFromResource("items/caflady_14.png"));
+        addImage(CAFF_LADY_15, ResourceTools.loadImageFromResource("items/caflady_15.png"));
+        addImage(CAFF_LADY_16, ResourceTools.loadImageFromResource("items/caflady_16.png"));
+        addImage(CAFF_LADY_17, ResourceTools.loadImageFromResource("items/caflady_17.png"));
+        addImage(CAFF_LADY_18, ResourceTools.loadImageFromResource("items/caflady_18.png"));
         
-      
+
         MACINNIS_ZOMBIE_WALK = new ArrayList<>();
         MACINNIS_ZOMBIE_WALK.add(MACINNIS_ZOMBIE_01);
         MACINNIS_ZOMBIE_WALK.add(MACINNIS_ZOMBIE_02);
@@ -227,7 +233,6 @@ public class ZombieImageManager extends ImageManager {
         MACINNIS_ZOMBIE_WALK.add(MACINNIS_ZOMBIE_12);
         MACINNIS_ZOMBIE_WALK.add(MACINNIS_ZOMBIE_13);
         MACINNIS_ZOMBIE_WALK.add(MACINNIS_ZOMBIE_14);
-
 
         LAWRENCE_ZOMBIE_WALK = new ArrayList<>();
         LAWRENCE_ZOMBIE_WALK.add(LAWRENCE_ZOMBIE_01);
@@ -263,7 +268,6 @@ public class ZombieImageManager extends ImageManager {
         LAWRENCE_ZOMBIE_WALK.add(LAWRENCE_ZOMBIE_29);
         LAWRENCE_ZOMBIE_WALK.add(LAWRENCE_ZOMBIE_30);
 
-        
         PATEL_ZOMBIE_WALK = new ArrayList<>();
         PATEL_ZOMBIE_WALK.add(PATEL_ZOMBIE_01);
         PATEL_ZOMBIE_WALK.add(PATEL_ZOMBIE_02);
@@ -282,7 +286,7 @@ public class ZombieImageManager extends ImageManager {
         ALEAH_PLANT.add(ALEAH_PLANT_04);
         ALEAH_PLANT.add(ALEAH_PLANT_05);
         ALEAH_PLANT.add(ALEAH_PLANT_06);
-        
+
         SOF_PLANT = new ArrayList<>();
         SOF_PLANT.add(SOF_PLANT_01);
         SOF_PLANT.add(SOF_PLANT_02);
@@ -293,5 +297,4 @@ public class ZombieImageManager extends ImageManager {
 
     }
 
-    
 }
