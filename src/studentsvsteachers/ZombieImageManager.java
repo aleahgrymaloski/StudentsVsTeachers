@@ -216,7 +216,15 @@ public class ZombieImageManager extends ImageManager {
         addImage(CAFF_LADY_16, ResourceTools.loadImageFromResource("items/caflady_16.png"));
         addImage(CAFF_LADY_17, ResourceTools.loadImageFromResource("items/caflady_17.png"));
         addImage(CAFF_LADY_18, ResourceTools.loadImageFromResource("items/caflady_18.png"));
-        
+        addImage(CAFF_LADY_19, ResourceTools.loadImageFromResource("items/caflady_19.png"));
+        addImage(CAFF_LADY_20, ResourceTools.loadImageFromResource("items/caflady_20.png"));
+        addImage(CAFF_LADY_21, ResourceTools.loadImageFromResource("items/caflady_21.png"));
+        addImage(CAFF_LADY_22, ResourceTools.loadImageFromResource("items/caflady_22.png"));
+        addImage(CAFF_LADY_23, ResourceTools.loadImageFromResource("items/caflady_23.png"));
+        addImage(CAFF_LADY_24, ResourceTools.loadImageFromResource("items/caflady_24.png"));
+        addImage(CAFF_LADY_25, ResourceTools.loadImageFromResource("items/caflady_25.png"));
+        addImage(CAFF_LADY_26, ResourceTools.loadImageFromResource("items/caflady_26.png"));
+        addImage(CAFF_LADY_27, ResourceTools.loadImageFromResource("items/caflady_27.png"));
 
         MACINNIS_ZOMBIE_WALK = new ArrayList<>();
         MACINNIS_ZOMBIE_WALK.add(MACINNIS_ZOMBIE_01);
@@ -294,6 +302,35 @@ public class ZombieImageManager extends ImageManager {
         SOF_PLANT.add(SOF_PLANT_04);
         SOF_PLANT.add(SOF_PLANT_05);
         SOF_PLANT.add(SOF_PLANT_06);
+
+        CAFF_LADY = new ArrayList<>();
+        CAFF_LADY.add(CAFF_LADY_01);
+        CAFF_LADY.add(CAFF_LADY_02);
+        CAFF_LADY.add(CAFF_LADY_03);
+        CAFF_LADY.add(CAFF_LADY_04);
+        CAFF_LADY.add(CAFF_LADY_05);
+        CAFF_LADY.add(CAFF_LADY_06);
+        CAFF_LADY.add(CAFF_LADY_07);
+        CAFF_LADY.add(CAFF_LADY_08);
+        CAFF_LADY.add(CAFF_LADY_09);
+        CAFF_LADY.add(CAFF_LADY_10);
+        CAFF_LADY.add(CAFF_LADY_11);
+        CAFF_LADY.add(CAFF_LADY_12);
+        CAFF_LADY.add(CAFF_LADY_13);
+        CAFF_LADY.add(CAFF_LADY_14);
+        CAFF_LADY.add(CAFF_LADY_15);
+        CAFF_LADY.add(CAFF_LADY_16);
+        CAFF_LADY.add(CAFF_LADY_17);
+        CAFF_LADY.add(CAFF_LADY_18);
+        CAFF_LADY.add(CAFF_LADY_19);
+        CAFF_LADY.add(CAFF_LADY_20);
+        CAFF_LADY.add(CAFF_LADY_21);
+        CAFF_LADY.add(CAFF_LADY_22);
+        CAFF_LADY.add(CAFF_LADY_23);
+        CAFF_LADY.add(CAFF_LADY_24);
+        CAFF_LADY.add(CAFF_LADY_25);
+        CAFF_LADY.add(CAFF_LADY_26);
+        CAFF_LADY.add(CAFF_LADY_27);
 
     }
 

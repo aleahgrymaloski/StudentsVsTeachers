@@ -62,7 +62,7 @@ class BattleField extends Environment implements CellDataProviderIntf  {
         
         sofMonster = new GridCharacter(1, 1, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200));
         aleahMonster = new GridCharacter(1, 2, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200));
-        cafLady = new GridCharacter (1, 3, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)); 
+        cafLady = new GridCharacter (0, 0, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)); 
 
 
     }
