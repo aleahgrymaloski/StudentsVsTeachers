@@ -173,16 +173,14 @@ public class ZombieImageManager extends ImageManager {
         addImage(ALEAH_PLANT_05, ResourceTools.loadImageFromResource("items/aleah_5.png"));
         addImage(ALEAH_PLANT_06, ResourceTools.loadImageFromResource("items/aleah_6.png"));
 
-//        addImage(SOF_PLANT_01, ResourceTools.loadImageFromResource("items/sof_1.png"));
-//        addImage(SOF_PLANT_02, ResourceTools.loadImageFromResource("items/sof_2.png"));
-//        addImage(SOF_PLANT_03, ResourceTools.loadImageFromResource("items/sof_3.png"));
-//        addImage(SOF_PLANT_04, ResourceTools.loadImageFromResource("items/sof_4.png"));
-//        addImage(SOF_PLANT_05, ResourceTools.loadImageFromResource("items/sof_5.png"));
-//        addImage(SOF_PLANT_06, ResourceTools.loadImageFromResource("items/sof_6.png"));
+        addImage(SOF_PLANT_01, ResourceTools.loadImageFromResource("items/sof_1.png"));
+        addImage(SOF_PLANT_02, ResourceTools.loadImageFromResource("items/sof_2.png"));
+        addImage(SOF_PLANT_03, ResourceTools.loadImageFromResource("items/sof_3.png"));
+        addImage(SOF_PLANT_04, ResourceTools.loadImageFromResource("items/sof_4.png"));
+        addImage(SOF_PLANT_05, ResourceTools.loadImageFromResource("items/sof_5.png"));
+        addImage(SOF_PLANT_06, ResourceTools.loadImageFromResource("items/sof_6.png"));
         
       
-
-
         MACINNIS_ZOMBIE_WALK = new ArrayList<>();
         MACINNIS_ZOMBIE_WALK.add(MACINNIS_ZOMBIE_01);
         MACINNIS_ZOMBIE_WALK.add(MACINNIS_ZOMBIE_02);
