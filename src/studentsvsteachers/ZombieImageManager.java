@@ -34,7 +34,6 @@ public class ZombieImageManager extends ImageManager {
     //carry on!!!!
     public static ArrayList<String> MACINNIS_ZOMBIE_WALK;
 
-
     public static final String REYNOLDS_ZOMBIE_01 = "REYNOLDS_ZOMBIE_01";
     public static final String REYNOLDS_ZOMBIE_02 = "REYNOLDS_ZOMBIE_02";
     public static final String REYNOLDS_ZOMBIE_03 = "REYNOLDS_ZOMBIE_03";
@@ -53,11 +52,9 @@ public class ZombieImageManager extends ImageManager {
     public static final String REYNOLDS_ZOMBIE_16 = "REYNOLDS_ZOMBIE_16";
     public static final String REYNOLDS_ZOMBIE_17 = "REYNOLDS_ZOMBIE_17";
     public static final String REYNOLDS_ZOMBIE_18 = "REYNOLDS_ZOMBIE_18";
-    
+
     public static ArrayList<String> REYNOLDS_ZOMBIE_WALK;
 
-
-    
     public static final String LAWRENCE_ZOMBIE_01 = "LAWRENCE_ZOMBIE_01";
     public static final String LAWRENCE_ZOMBIE_02 = "LAWRENCE_ZOMBIE_02";
     public static final String LAWRENCE_ZOMBIE_03 = "LAWRENCE_ZOMBIE_03";
@@ -167,7 +164,6 @@ public class ZombieImageManager extends ImageManager {
         addImage(MACINNIS_ZOMBIE_13, ResourceTools.loadImageFromResource("items/macinnis_13.png"));
         addImage(MACINNIS_ZOMBIE_14, ResourceTools.loadImageFromResource("items/macinnis_14.png"));
 
-        
         addImage(REYNOLDS_ZOMBIE_01, ResourceTools.loadImageFromResource("items/reynolds_1.png"));
         addImage(REYNOLDS_ZOMBIE_02, ResourceTools.loadImageFromResource("items/reynolds_2.png"));
         addImage(REYNOLDS_ZOMBIE_03, ResourceTools.loadImageFromResource("items/reynolds_3.png"));
@@ -187,9 +183,6 @@ public class ZombieImageManager extends ImageManager {
         addImage(REYNOLDS_ZOMBIE_17, ResourceTools.loadImageFromResource("items/reynolds_17.png"));
         addImage(REYNOLDS_ZOMBIE_18, ResourceTools.loadImageFromResource("items/reynolds_18.png"));
 
-
-        
-        
         addImage(LAWRENCE_ZOMBIE_01, ResourceTools.loadImageFromResource("items/lawrence_1.png"));
         addImage(LAWRENCE_ZOMBIE_02, ResourceTools.loadImageFromResource("items/lawrence_2.png"));
         addImage(LAWRENCE_ZOMBIE_03, ResourceTools.loadImageFromResource("items/lawrence_3.png"));
@@ -308,8 +301,6 @@ public class ZombieImageManager extends ImageManager {
         REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_16);
         REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_17);
         REYNOLDS_ZOMBIE_WALK.add(REYNOLDS_ZOMBIE_18);
-
-
 
         LAWRENCE_ZOMBIE_WALK = new ArrayList<>();
         LAWRENCE_ZOMBIE_WALK.add(LAWRENCE_ZOMBIE_01);
