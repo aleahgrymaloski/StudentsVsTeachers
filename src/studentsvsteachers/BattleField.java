@@ -28,23 +28,23 @@ import map.Item;
  *
  * @author Aleah
  */
-class BattleField extends Environment implements CellDataProviderIntf  {
+class BattleField extends Environment implements CellDataProviderIntf {
 
     private Grid grid;
     private String trackNameGameTimer;
     private int score;
-  
 
     private audio.SoundManager soundManager;
     public static final String ZOMBIES_SONG = "zombie";
-    
+
     private GridCharacter sofMonster;
     private GridCharacter aleahMonster;
-    
-    private ZombieImageManager zim;
-    
-    public BattleField() {
+    private GridCharacter cafLady;
+    private GridCharacter lawrenceZombie;
 
+    private ZombieImageManager zim;
+
+    public BattleField() {
 
         BufferedImage temp = (BufferedImage) ResourceTools.loadImageFromResource("items/background.png");
         this.setBackground(temp.getScaledInstance(1000, 700, Image.SCALE_SMOOTH));
@@ -55,14 +55,15 @@ class BattleField extends Environment implements CellDataProviderIntf  {
 
         setUpSound();
         soundManager.play(ZOMBIES_SONG, -1);
-        
+
         zim = new ZombieImageManager();
-        
+
         sofMonster = new GridCharacter(1, 1, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200));
         aleahMonster = new GridCharacter(1, 2, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200));
+        cafLady = new GridCharacter(0, 0, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200));
 
     }
-   
+
     private void setUpSound() {
         // set up a list of tracks in a playlist
         ArrayList<Track> tracks = new ArrayList<>();
@@ -71,7 +72,7 @@ class BattleField extends Environment implements CellDataProviderIntf  {
         // pass the playlist to a sound manager
         soundManager = new audio.SoundManager(playlist);
     }
-    
+
     public void setScore(int score) {
         this.score = score;
 
@@ -87,9 +88,26 @@ class BattleField extends Environment implements CellDataProviderIntf  {
     public void initializeEnvironment() {
 
     }
+    
+    private int counter;
+    private int limit = 2;
 
     @Override
     public void timerTaskHandler() {
+        if (lawrenceZombie != null) {
+            if (counter < limit) {
+                counter++;
+            }else { 
+                counter = 0;
+                lawrenceZombie.move(); 
+                
+            }
+        }
+
+    }
+    
+    private void movelawrenceZombie(){ 
+        
     }
 
     @Override
@@ -109,7 +127,7 @@ class BattleField extends Environment implements CellDataProviderIntf  {
         if (grid != null) {
             grid.paintComponent(graphics);
         }
-        
+
         graphics.setColor(Color.white);
         graphics.setFont(new Font("Typewriter", Font.BOLD, 35));
         graphics.drawString("Score: " + score, 10, 30);
@@ -117,12 +135,16 @@ class BattleField extends Environment implements CellDataProviderIntf  {
         if (score < 0) {
             graphics.drawString("Game Over", 300, 300);
         }
-        
-        if (sofMonster != null){
+
+        if (sofMonster != null) {
             sofMonster.draw(graphics);
         }
-        if (aleahMonster != null){
+        if (aleahMonster != null) {
             aleahMonster.draw(graphics);
+        }
+
+        if (cafLady != null) {
+            cafLady.draw(graphics);
         }
     }
 
@@ -130,24 +152,24 @@ class BattleField extends Environment implements CellDataProviderIntf  {
     @Override
     public int getCellWidth() {
         return grid.getCellWidth();
-        
+
     }
-    
+
     @Override
     public int getCellHeight() {
         return grid.getCellHeight();
 
     }
-    
+
     @Override
     public int getSystemCoordX(int column, int row) {
         return grid.getCellSystemCoordinate(column, row).x;
 
     }
-    
+
     @Override
     public int getSystemCoordY(int column, int row) {
-        return grid.getCellSystemCoordinate(column, row).y; 
+        return grid.getCellSystemCoordinate(column, row).y;
 
     }
 //</editor-fold>
