@@ -9,6 +9,7 @@ import audio.SoundManager;
 import audio.Playlist;
 import audio.Source;
 import audio.Track;
+import environment.Direction;
 import environment.Environment;
 import grid.Grid;
 import images.Animator;
@@ -94,21 +95,14 @@ class BattleField extends Environment implements CellDataProviderIntf {
 
     @Override
     public void timerTaskHandler() {
-        if (lawrenceZombie != null) {
-            if (counter < limit) {
-                counter++;
-            }else { 
-                counter = 0;
-                lawrenceZombie.move(); 
-                
-            }
+      
         }
 
-    }
     
-    private void movelawrenceZombie(){ 
+    private void checkIntersections(){ 
         
     }
+    
 
     @Override
     public void keyPressedHandler(KeyEvent e) {
@@ -146,6 +140,7 @@ class BattleField extends Environment implements CellDataProviderIntf {
         if (cafLady != null) {
             cafLady.draw(graphics);
         }
+     
     }
 
 //<editor-fold defaultstate="collapsed" desc="CellDataProviderIntf ">

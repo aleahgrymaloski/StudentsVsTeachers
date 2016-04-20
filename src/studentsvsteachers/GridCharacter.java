@@ -5,6 +5,7 @@
  */
 package studentsvsteachers;
 
+import environment.Direction;
 import images.Animator;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -33,5 +34,9 @@ public class GridCharacter {
     private int column, row; 
     private CellDataProviderIntf cellData;
     private Animator animator;
+
+    
+
+    
     
 }
