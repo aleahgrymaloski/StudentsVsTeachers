@@ -18,6 +18,7 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Point;
+import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
@@ -37,14 +38,23 @@ class BattleField extends Environment implements CellDataProviderIntf {
     private audio.SoundManager soundManager;
     public static final String ZOMBIES_SONG = "zombie";
 
-    private GridCharacter sofMonster;
-    private GridCharacter aleahMonster;
-    private GridCharacter cafLady;
+//    private GridCharacter sofMonster;
+//    private GridCharacter aleahMonster;
+//    private GridCharacter cafLady;
+
+    private Image newPlantButton;
+    private Point newPlantPosition;
+    
+    private ArrayList<GridCharacter> plants;
     private GridCharacter lawrenceZombie;
 
     private ZombieImageManager zim;
 
     public BattleField() {
+        newPlantButton = ResourceTools.loadImageFromResource("items/sof_1.png");
+        newPlantPosition = new Point(200, 10);
+        
+        plants = new ArrayList<>();
 
         BufferedImage temp = (BufferedImage) ResourceTools.loadImageFromResource("items/background.png");
         this.setBackground(temp.getScaledInstance(1000, 700, Image.SCALE_SMOOTH));
@@ -58,9 +68,9 @@ class BattleField extends Environment implements CellDataProviderIntf {
 
         zim = new ZombieImageManager();
 
-        sofMonster = new GridCharacter(1, 1, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200));
-        aleahMonster = new GridCharacter(1, 2, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200));
-        cafLady = new GridCharacter(0, 0, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200));
+//        sofMonster = new GridCharacter(1, 1, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200));
+//        aleahMonster = new GridCharacter(1, 2, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200));
+//        cafLady = new GridCharacter(0, 0, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200));
 
     }
 
@@ -94,15 +104,15 @@ class BattleField extends Environment implements CellDataProviderIntf {
 
     @Override
     public void timerTaskHandler() {
-        if (lawrenceZombie != null) {
-            if (counter < limit) {
-                counter++;
-            }else { 
-                counter = 0;
-                lawrenceZombie.move(); 
-                
-            }
-        }
+//        if (lawrenceZombie != null) {
+//            if (counter < limit) {
+//                counter++;
+//            }else { 
+//                counter = 0;
+//                lawrenceZombie.move(); 
+//                
+//            }
+//        }
 
     }
     
@@ -120,6 +130,26 @@ class BattleField extends Environment implements CellDataProviderIntf {
 
     @Override
     public void environmentMouseClicked(MouseEvent e) {
+//        System.out.println("mouse click - screen " + e.getPoint());
+//        System.out.println("mouse click - grid   " + grid.getCellLocationFromSystemCoordinate(e.getPoint()));
+
+        //check if I hit the new Plant button..
+        if ( (new Rectangle(newPlantPosition.x, newPlantPosition.y, newPlantButton.getWidth(null), newPlantButton.getHeight(null))).contains(e.getPoint())) {
+            System.out.println("NEW PLANT TO BE CREATED");
+        }
+        
+        
+        
+//        double randPlant = Math.random();
+//        if (randPlant < .33) {
+//            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)));
+//        } else if (randPlant < .66){
+//            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200)));
+//        } else {
+//            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200)));
+//        }
+        
+
     }
 
     @Override
@@ -132,20 +162,27 @@ class BattleField extends Environment implements CellDataProviderIntf {
         graphics.setFont(new Font("Typewriter", Font.BOLD, 35));
         graphics.drawString("Score: " + score, 10, 30);
 
+        graphics.drawImage(newPlantButton, newPlantPosition.x, newPlantPosition.y, 25, 25, this);
         if (score < 0) {
             graphics.drawString("Game Over", 300, 300);
         }
 
-        if (sofMonster != null) {
-            sofMonster.draw(graphics);
+        if (plants != null) {
+            for(GridCharacter plant: plants){
+                plant.draw(graphics);
+            }
+            
         }
-        if (aleahMonster != null) {
-            aleahMonster.draw(graphics);
-        }
-
-        if (cafLady != null) {
-            cafLady.draw(graphics);
-        }
+//        if (sofMonster != null) {
+//            sofMonster.draw(graphics);
+//        }
+//        if (aleahMonster != null) {
+//            aleahMonster.draw(graphics);
+//        }
+//
+//        if (cafLady != null) {
+//            cafLady.draw(graphics);
+//        }
     }
 
 //<editor-fold defaultstate="collapsed" desc="CellDataProviderIntf ">

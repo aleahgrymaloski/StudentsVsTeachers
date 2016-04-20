@@ -184,7 +184,7 @@ public class ZombieImageManager extends ImageManager {
         addImage(MACINNIS_ZOMBIE_12, ResourceTools.loadImageFromResource("items/macinnis_12.png"));
         addImage(MACINNIS_ZOMBIE_13, ResourceTools.loadImageFromResource("items/macinnis_13.png"));
         addImage(MACINNIS_ZOMBIE_14, ResourceTools.loadImageFromResource("items/macinnis_14.png"));
-<<<<<<< HEAD
+
         
         addImage(BRYANT_ZOMBIE_01, ResourceTools.loadImageFromResource("items/bryant_zombie_1.png"));
         addImage(BRYANT_ZOMBIE_02, ResourceTools.loadImageFromResource("items/bryant_zombie_2.png"));
@@ -204,10 +204,6 @@ public class ZombieImageManager extends ImageManager {
         addImage(BRYANT_ZOMBIE_16, ResourceTools.loadImageFromResource("items/bryant_zombie_16.png"));
 
 
-        
-=======
-
->>>>>>> SGP-Sprites
         addImage(REYNOLDS_ZOMBIE_01, ResourceTools.loadImageFromResource("items/reynolds_1.png"));
         addImage(REYNOLDS_ZOMBIE_02, ResourceTools.loadImageFromResource("items/reynolds_2.png"));
         addImage(REYNOLDS_ZOMBIE_03, ResourceTools.loadImageFromResource("items/reynolds_3.png"));
@@ -344,9 +340,6 @@ public class ZombieImageManager extends ImageManager {
         BRYANT_ZOMBIE_WALK.add(BRYANT_ZOMBIE_15);
         BRYANT_ZOMBIE_WALK.add(BRYANT_ZOMBIE_16);
 
-
-
-        
 
 
         REYNOLDS_ZOMBIE_WALK = new ArrayList<>();
