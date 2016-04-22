@@ -140,14 +140,14 @@ class BattleField extends Environment implements CellDataProviderIntf {
         
         
         
-//        double randPlant = Math.random();
-//        if (randPlant < .33) {
-//            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)));
-//        } else if (randPlant < .66){
-//            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200)));
-//        } else {
-//            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200)));
-//        }
+        double randPlant = Math.random();
+        if (randPlant < .33) {
+            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)));
+        } else if (randPlant < .66){
+            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200)));
+        } else {
+            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200)));
+        }
         
 
     }
