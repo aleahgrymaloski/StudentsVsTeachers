@@ -44,6 +44,8 @@ class BattleField extends Environment implements CellDataProviderIntf {
     private ArrayList<GridCharacter> plants;
     private ArrayList<Pea> peas;
     private GridCharacter lawrenceZombie;
+    private ArrayList<Cookie> cookies;
+    private GridCharacter caffLady;
 
     private ZombieImageManager zim;
 
@@ -53,6 +55,16 @@ class BattleField extends Environment implements CellDataProviderIntf {
             safePeas.add(pea);
         }
         return safePeas;
+    }
+
+    public ArrayList<Cookie> getCookiesSafe() {
+        ArrayList<Cookie> safeCookies = new ArrayList<>();
+        for (Cookie cookie : cookies) {
+            safeCookies.add(cookie);
+
+        }
+        return safeCookies;
+
     }
 
     public ArrayList<GridCharacter> getPlantsSafe() {
@@ -69,6 +81,7 @@ class BattleField extends Environment implements CellDataProviderIntf {
 
         peas = new ArrayList<>();
         plants = new ArrayList<>();
+        cookies = new ArrayList<>();
 
         BufferedImage temp = (BufferedImage) ResourceTools.loadImageFromResource("items/background.png");
         this.setBackground(temp.getScaledInstance(1000, 700, Image.SCALE_SMOOTH));
@@ -130,12 +143,26 @@ class BattleField extends Environment implements CellDataProviderIntf {
             }
         }
 
+        if (cookies != null) {
+            for (Cookie cookie : cookies) {
+                cookie.move();
+            }
+        }
+
         if (plants != null) {
             for (GridCharacter plant : getPlantsSafe()) {
                 if (Math.random() < .01) {
                     peas.add(plant.shoot());
                 }
             }
+            if (caffLady != null) {
+                for (Cookie caffLady : getCookiesSafe()) {
+                    if (Math.random() < .01) {
+                        cookies.add(caffLady.shootCookie());
+                    }
+                }
+            }
+
         }
 
     }
@@ -169,6 +196,12 @@ class BattleField extends Environment implements CellDataProviderIntf {
         } else {
             plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200)));
         }
+
+        double randCookie = Math.random();
+        if (randCookie < .33) {
+            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200)));
+        } else if (randCookie < .66){ 
+            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200)));      }
     }
 
     @Override
@@ -195,6 +228,11 @@ class BattleField extends Environment implements CellDataProviderIntf {
         if (peas != null) {
             for (Pea pea : getPeasSafe()) {
                 pea.paint(graphics);
+            }
+        }
+        if (cookies != null) {
+            for (Cookie cookie : getCookiesSafe()) {
+                cookie.paint(graphics);
             }
         }
     }
