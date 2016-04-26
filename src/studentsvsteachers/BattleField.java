@@ -133,7 +133,9 @@ class BattleField extends Environment implements CellDataProviderIntf {
         
         
         
-        double randPlant = Math.random();
+        double randPlant;
+        
+        randPlant = Math.random();
         if (randPlant < .33) {
             plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)));
         } else if (randPlant < .66){
@@ -141,11 +143,14 @@ class BattleField extends Environment implements CellDataProviderIntf {
         } else {
             plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200)));
         }
+
 //        if ( (new Rectangle(newPlantPosition.x, newPlantPosition.y, newPlantButton.getWidth(null), newPlantButton.getHeight(null))).contains(e.getPoint())) {
 //            System.out.println("NEW PLANT TO BE CREATED");
 //        }
-        
-//        double randPlant = Math.random();
+
+
+        randPlant = Math.random();
+
         if (randPlant < .33) {
             plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)));
         } else if (randPlant < .66){
