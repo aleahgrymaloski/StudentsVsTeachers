@@ -190,8 +190,8 @@ class BattleField extends Environment implements CellDataProviderIntf {
 //        }
         double randPlant = Math.random();
         if (randPlant < .33) {
-            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)));
-        } else if (randPlant < .66) {
+        }
+        if (randPlant < .66) {
             plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200)));
         } else {
             plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200)));
@@ -199,9 +199,9 @@ class BattleField extends Environment implements CellDataProviderIntf {
 
         double randCookie = Math.random();
         if (randCookie < .33) {
-            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200)));
-        } else if (randCookie < .66){ 
-            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200)));      }
+            cookies.add(new cookies(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)));
+        }
+
     }
 
     @Override
@@ -215,6 +215,7 @@ class BattleField extends Environment implements CellDataProviderIntf {
         graphics.drawString("Score: " + score, 10, 30);
 
         graphics.drawImage(newPlantButton, newPlantPosition.x, newPlantPosition.y, 25, 25, this);
+        
         if (score < 0) {
             graphics.drawString("Game Over", 300, 300);
         }

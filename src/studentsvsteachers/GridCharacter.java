@@ -30,6 +30,7 @@ public class GridCharacter {
         this.animator = animator; 
         this.column = column; 
         this.row = row; 
+        
     }
     
     public Pea shoot(){
@@ -58,5 +59,6 @@ public class GridCharacter {
     private int column, row; 
     private CellDataProviderIntf cellData;
     private Animator animator;
+    
     
 }
