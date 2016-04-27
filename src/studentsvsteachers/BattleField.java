@@ -199,7 +199,7 @@ class BattleField extends Environment implements CellDataProviderIntf {
 
         double randCookie = Math.random();
         if (randCookie < .33) {
-            cookies.add(new cookies(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)));
+            cookies.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)));
         }
 
     }
