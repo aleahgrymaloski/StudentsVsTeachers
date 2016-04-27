@@ -20,9 +20,5 @@ public class Cookie extends Actor {
     public Cookie(Point position, Velocity velocity) {
         super(ResourceTools.loadImageFromResource("items/Cookie.png"), position, velocity);
     }
-
-    Cookie shootCookie() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 }

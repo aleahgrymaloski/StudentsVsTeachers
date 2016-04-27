@@ -151,17 +151,21 @@ class BattleField extends Environment implements CellDataProviderIntf {
 
         if (plants != null) {
             for (GridCharacter plant : getPlantsSafe()) {
-                if (Math.random() < .01) {
-                    peas.add(plant.shoot());
+                if ((plant instanceof PeaShooter) && (Math.random() < .01)) {
+                    peas.add(((PeaShooter)plant).shoot());
+                }
+
+                if ((plant instanceof CafLady) && (Math.random() < .01)) {
+                    cookies.add(((CafLady)plant).shootCookie());
                 }
             }
-            if (caffLady != null) {
-                for (Cookie caffLady : getCookiesSafe()) {
-                    if (Math.random() < .01) {
-                        cookies.add(caffLady.shootCookie());
-                    }
-                }
-            }
+//            if (caffLady != null) {
+//                for (Cookie caffLady : getCookiesSafe()) {
+//                    if (Math.random() < .01) {
+//                        cookies.add(caffLady.shootCookie());
+//                    }
+//                }
+//            }
 
         }
 
@@ -185,22 +189,20 @@ class BattleField extends Environment implements CellDataProviderIntf {
 //        System.out.println("mouse click - grid   " + grid.getCellLocationFromSystemCoordinate(e.getPoint()));
 
         //check if I hit the new Plant button..
-//        if ( (new Rectangle(newPlantPosition.x, newPlantPosition.y, newPlantButton.getWidth(null), newPlantButton.getHeight(null))).contains(e.getPoint())) {
-//            System.out.println("NEW PLANT TO BE CREATED");
+        if ( (new Rectangle(newPlantPosition.x, newPlantPosition.y, newPlantButton.getWidth(null), newPlantButton.getHeight(null))).contains(e.getPoint())) {
+            System.out.println("NEW PLANT TO BE CREATED");
+        }
+//        double randPlant = Math.random();
+//        if (randPlant < .66) {
+//            plants.add(new CafLady(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200)));
+//        } else {
+//            plants.add(new PeaShooter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200)));
 //        }
-        double randPlant = Math.random();
-        if (randPlant < .33) {
-        }
-        if (randPlant < .66) {
-            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.ALEAH_PLANT, 200)));
-        } else {
-            plants.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.SOF_PLANT, 200)));
-        }
 
-        double randCookie = Math.random();
-        if (randCookie < .33) {
-            cookies.add(new GridCharacter(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)));
-        }
+//        double randCookie = Math.random();
+//        if (randCookie < .33) {
+//            cookies.add(new Cookie(grid.getCellLocationFromSystemCoordinate(e.getPoint()).x, grid.getCellLocationFromSystemCoordinate(e.getPoint()).y, this, new Animator(zim, ZombieImageManager.CAFF_LADY, 200)));
+//        }
 
     }
 
@@ -231,6 +233,7 @@ class BattleField extends Environment implements CellDataProviderIntf {
                 pea.paint(graphics);
             }
         }
+        
         if (cookies != null) {
             for (Cookie cookie : getCookiesSafe()) {
                 cookie.paint(graphics);
