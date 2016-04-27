@@ -19,6 +19,8 @@ public class Cookie extends Actor {
 
     public Cookie(Point position, Velocity velocity) {
         super(ResourceTools.loadImageFromResource("items/Cookie.png"), position, velocity);
+        
+        
     }
     
 }

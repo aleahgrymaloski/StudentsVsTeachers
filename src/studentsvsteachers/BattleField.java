@@ -39,6 +39,7 @@ class BattleField extends Environment implements CellDataProviderIntf {
     public static final String ZOMBIES_SONG = "zombie";
 
     private Image newPlantButton;
+    private Image Cookie; 
     private Point newPlantPosition;
 
     private ArrayList<GridCharacter> plants;
@@ -236,11 +237,12 @@ class BattleField extends Environment implements CellDataProviderIntf {
         
         if (cookies != null) {
             for (Cookie cookie : getCookiesSafe()) {
-                cookie.paint(graphics);
+              graphics.drawImage(Cookie, 8, 8, this); 
             }
         }
     }
 
+    
 //<editor-fold defaultstate="collapsed" desc="CellDataProviderIntf ">
     @Override
     public int getCellWidth() {
