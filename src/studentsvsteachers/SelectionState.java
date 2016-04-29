@@ -9,6 +9,6 @@ package studentsvsteachers;
  *
  * @author Aleah
  */
-public enum GameState {
-    
+public enum SelectionState {
+    NORMAL, CREATE_PS, CREATE_CL    
 }
